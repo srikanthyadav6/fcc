@@ -1,27 +1,162 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1">
     <title>FCC Survey</title>
+    <link   rel="stylesheet" href="style-survey.css" />
   </head>
   <body>
     <div>
-      <h1 id="title">Survey</h1>
-      <p id="desciption">Thanks for helping us improve</p>
+      <h1 id="title">Couse Survey</h1>
+      <p  id="description">Thanks for helping us improve</p>
     </div>
-    <div>
+    <div id="form-div">
         <form id="survey-form">
 
-            <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name"/>
+          <div class="form-group">
+            <label id="name-label" class="sub-heading-label" for="name">Name</label>
+            <input 
+              class="form-input" 
+              type="text" 
+              name="name" 
+              id="name" 
+              placeholder="Enter Name" 
+              required
+            />
+          </div>
 
-            <label id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email"/>
+          <div class="form-group">
+            <label id="email-label" class="sub-heading-label" for="email">Email</label>
+            <input 
+              class="form-input" 
+              type="email" 
+              name="email" 
+              id="email" 
+              placeholder="abc@domain.com" 
+              required
+            />
+          </div>
 
-            <label id="number-label" for="number">Age</label>
-            <input type="number" name="age" id="number" min="16" max= "90" />
+          <div class="form-group">
+            <label id="number-label" class="sub-heading-label" for="number">Age</label>
+            <input 
+              class="form-input" 
+              type="number" 
+              name="age" 
+              id="number" 
+              min="16" 
+              max= "90" 
+              placeholder="Enter Age" 
+              required
+            />
+          </div>
 
-            <label id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email"/>
+          <div class="form-group">
+            <label id="current-role" for="dropdown" class="sub-heading-label">Current Role</label>
+            <select id="dropdown" name="current-role" class="form-input" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="sub-heading-label">How good is this course?</label>
+            <label>
+              <input
+                name="user-feedback"
+                value="exellent"
+                type="radio"
+                class="input-radio"
+                checked
+              />Exellent
+            </label>
+            <label>
+              <input
+                name="user-feedback"
+                value="good"
+                type="radio"
+                class="input-radio"
+              />Good
+            </label>
+
+            <label>
+              <input
+                name="user-feedback"
+                value="poor"
+                type="radio"
+                class="input-radio"
+              />Poor
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="sub-heading-label">What would you like to learn?</label>
+      
+            <label>
+              <input
+                name="course"
+                value="python"
+                type="checkbox"
+                class="input-checkbox"
+              />Python</label
+            >
+            <label>
+              <input
+                name="course"
+                value="java"
+                type="checkbox"
+                class="input-checkbox"
+              />Java</label
+            >
+            <label>
+              <input
+                name="course"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Data Visualization</label
+            >
+            <label>
+              <input
+                name="course"
+                value="machine-learning"
+                type="checkbox"
+                class="input-checkbox"
+              />Machine Learning</label
+            >
+            <label>
+              <input
+                name="course"
+                value="data-science"
+                type="checkbox"
+                class="input-checkbox"
+              />Data Science</label
+            >
+            <label>
+              <input
+                name="course"
+                value="node-js"
+                type="checkbox"
+                class="input-checkbox"
+              />Node JS</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <label class="sub-heading-label">Any comments or suggestions?</label>
+            <textarea
+              id="comment"
+              class="textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+          </div>
         </form>
     </div>
 
