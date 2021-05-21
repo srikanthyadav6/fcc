@@ -23,12 +23,12 @@ header{
     color: #BBA9D9;
 }
 #image{
-    min-width: 250px;
+    min-width: 300px;
     max-width: 100%;
 }
 
 p,h3{
-    font-size:20px;
+    font-size:17px;
     text-align: justify;
     color: #DDD4EC;
 }
@@ -61,9 +61,32 @@ a,figcaption{color: #DDD4EC;}
         "info";
     }
     #title{
-        font-size: 75px;
+        padding-top: 20px;
+        font-size: 70px;
     }
     #sub-title{
-        font-size: 30px;
+        font-size: 25px;
+    }
+    #image{
+        min-width: 150px;
+        max-width: 100%;
     }  
+}
+@media(max-width: 420){
+    #title{
+        padding-top: 10px;
+        font-size: 60px;
+    }
+    #sub-title{
+        font-size: 20px;
+    }
+}
+@media(max-width: 350){
+    #title{
+        padding-top: 7px;
+        font-size: 20px;
+    }
+    #sub-title{
+        font-size: 17px;
+    }
 }
