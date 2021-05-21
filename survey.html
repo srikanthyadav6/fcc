@@ -8,7 +8,7 @@
   </head>
   <body>
     <div>
-      <h1 id="title">Couse Survey</h1>
+      <h1 id="title">Course Survey</h1>
       <p  id="description">Thanks for helping us improve</p>
     </div>
     <div id="form-div">
@@ -55,7 +55,7 @@
           <div class="form-group">
             <label id="current-role" for="dropdown" class="sub-heading-label">Current Role</label>
             <select id="dropdown" name="current-role" class="form-input" required>
-              <option disabled selected value>Select current role</option>
+              <option disabled selected value>Select Role</option>
               <option value="student">Student</option>
               <option value="job">Full Time Job</option>
               <option value="learner">Full Time Learner</option>
@@ -63,32 +63,23 @@
           </div>
           
           <div class="form-group">
-            <label class="sub-heading-label">How good is this course?</label>
+            <label class="sub-heading-label">What is your Education Background?</label>
             <label>
               <input
-                name="user-feedback"
-                value="exellent"
+                name="edu-background"
+                value="computer-science"
                 type="radio"
                 class="input-radio"
                 checked
-              />Exellent
+              />Computer Science
             </label>
             <label>
               <input
-                name="user-feedback"
-                value="good"
+                name="edu-background"
+                value="non-computer-science"
                 type="radio"
                 class="input-radio"
-              />Good
-            </label>
-
-            <label>
-              <input
-                name="user-feedback"
-                value="poor"
-                type="radio"
-                class="input-radio"
-              />Poor
+              />Non Computer Science
             </label>
           </div>
           <div class="form-group">
@@ -145,7 +136,7 @@
           </div>
       
           <div class="form-group">
-            <label class="sub-heading-label">Any comments or suggestions?</label>
+            <label class="sub-heading-label">Any suggestions?</label>
             <textarea
               id="comment"
               class="textarea"
