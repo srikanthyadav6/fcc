@@ -1,13 +1,4 @@
 body{background-color: #556B2F;}
-header{
-    position: fixed;
-    top:0;
-    left:0;
-    background-color: darkseagreen;
-    width: 100%;
-    height:50px;
-    z-index: 1;
-}
 #title{
     padding-top: 60px;
     font-size: 100px;
@@ -39,6 +30,14 @@ a,figcaption{color: #DDD4EC;}
     align-items: center;
     justify-items: center;
 }
+img {
+    width:100%;
+    height:auto;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+  }
 #title-div{
     grid-area: title;
 }
