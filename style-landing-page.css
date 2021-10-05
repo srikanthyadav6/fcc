@@ -1,0 +1,62 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 20px;
+    align-items: center;
+    background-color:#333333;
+}
+h1 {
+    color: white;
+}
+nav footer {
+    background-color: #333333;
+}
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+li {
+    display: inline-block;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111111;
+  }
+main {
+    margin-top: 250px;
+  }
+#email-label {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 50px;
+    color: darkgoldenrod;
+}
+main {
+    text-align: center;
+}
+input {
+    margin: 17px;
+    height: 40px;
+    width: 400px;
+    text-align: center;
+}
+#submit {
+    color: darkgoldenrod;
+    width: fit-content;
+    background-color: lightblue;
+}
