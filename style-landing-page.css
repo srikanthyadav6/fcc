@@ -5,6 +5,7 @@ main {
 header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     padding: 0px 20px;
     display: flex;
@@ -19,9 +20,13 @@ h1  {
     padding: 0px 10px;
 }
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
     padding: 0px 20px;
     width: 100%;
+    height: 50px;
     align-items: center;
     background-color: #333333;
 }
@@ -39,6 +44,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333333;
+  }
+  footer ul{
+    display: flex;
   }
 li a {
     color: white;
@@ -66,6 +74,16 @@ iframe {
 .icon {
   width: fit-content;
 }
+.flex-box {
+    display: flex;
+    justify-content: center;
+}
+.price-card {
+  background: gray;
+  width: 200px;
+  height: 100px;
+  margin: 0 10px;
+}
 
 #submit {
     color: darkgoldenrod;
@@ -89,6 +107,10 @@ iframe {
 #copyright {
   color: white;
 }
+#pricing {
+  margin-bottom: 100px;
+}
+
 
 
 @media (max-width: 400px){
