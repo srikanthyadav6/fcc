@@ -59,7 +59,6 @@ iframe {
                   "icon2 desc2";
   grid-template-rows: 50px 50px;
   grid-template-columns: 60px 500px ;
-  grid-template-rows: min-content min-content;
   align-items: center;
   text-align: left;
   margin: 30px;;
@@ -86,4 +85,14 @@ iframe {
     margin: 0 auto;
     padding: 10px;
     position: relative;
+}
+#copyright {
+  color: white;
+}
+
+
+@media (max-width: 400px){
+    form {
+      text-align: center;
+    }
 }
